@@ -30,7 +30,6 @@ function onSearchInput(event) {
   
     event.preventDefault();
     const searchQuery = event.target.value.trim()
-    clearMarkup();
 
     API.fetchCountries(searchQuery)
     .then(searchSuccess)
@@ -62,8 +61,14 @@ function searchSuccess(request) {
             text: "Enter the correct request"})
       return;
       }
+
+      if (request.status === 404) {
+        error({
+            text: "Enter the correct request"})
+      return;
+        }
 }
 
 function clearMarkup() {
     card.innerHTML = '';
-  }
+  };

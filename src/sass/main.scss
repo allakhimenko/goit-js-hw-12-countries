@@ -6,3 +6,61 @@
      padding-left: 15px;
      padding-right: 15px;
    }
+
+body {font-family: 'Montserrat', sans-serif;}
+
+h1 {
+  font-family: 'Monoton', cursive;
+  font-size: 72px;
+  font-weight: 200;
+
+  background: linear-gradient(45deg, #0B2349 33%, #0D61BC 66%, #8AA9D6);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  color: #0B2349;
+
+  padding-top: 30px;
+  padding-bottom: 30px;
+  margin: 0;
+}
+
+.search {
+  width: 700px;
+  height: 100px;
+	position:relative;
+	font-size: 1.5em;
+	background: linear-gradient(21deg, #0B2349 33%, #0D61BC 66%, #8AA9D6);
+	padding: 3px;
+	display: inline-block;
+	border-radius: 9999em;
+	
+	*:not(span) {
+    width: 691px;
+    height: 93px;
+
+		position: relative;
+		display: inherit;
+		border-radius: inherit;
+		margin: 0;
+		border: none;
+		outline: none;
+		padding: 0 .325em;
+		z-index: 1; 
+	}
+}
+.country {
+  padding-left: 0;
+}
+
+.country li{
+  list-style-type: none;
+  font-size: 22;
+}
+
+.country__langs {
+  padding: 0;
+}
+
+.flag {
+  padding-top: 20px;
+}
